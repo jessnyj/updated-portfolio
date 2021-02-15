@@ -8,59 +8,80 @@
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/css/styles.css">
     <!-- Bulma -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.2/css/bulma.min.css" integrity="sha512-byErQdWdTqREz6DLAA9pCnLbdoGGhXfU6gm1c8bkf7F51JVmUBlayGe2A31VpXWQP+eiJ3ilTAZHCR3vmMyybA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.2/css/bulma.min.css"
+        integrity="sha512-byErQdWdTqREz6DLAA9pCnLbdoGGhXfU6gm1c8bkf7F51JVmUBlayGe2A31VpXWQP+eiJ3ilTAZHCR3vmMyybA=="
+        crossorigin="anonymous" />
     <!-- Fontawesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
     <title>Jessny Joseph</title>
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar is-transparent">
-        <div class="navbar-brand">
-            <div class="navbar-burger" data-target="navbarExampleTransparentExample">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-
-        <div id="navbarExampleTransparentExample" class="navbar-menu">
-            <div class="navbar-start">
-                <a class="navbar-item" href="./index.html">
-                    Home
-                </a>
-                <a class="navbar-item" href="./projects.html">
-                    Projects
-                </a>
-                <a class="navbar-item" href="./about.html">
-                    About Me
-                </a>
-                <a class="navbar-item" href="./contact.html">
-                    Contact
-                </a>
+    <section class="hero is-info is-large">
+        <div class="hero-head">
+            <nav class="navbar">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <span class="navbar-burger" data-target="navbarMenuHeroB">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
                     </div>
-                </div>
-            </div>
-
-            <div class="navbar-end">
-                <div class="navbar-item">
-                    <div class="field is-grouped">
-                        <!-- fix this -->
-                        <p class="control">
-                            <a class="button is-info is-outlined"
-                                href="/images/resume.pdf">
-                                <span class="icon">
-                                    <i class="fas fa-download"></i>
-                                </span>
-                                <span>Resume</span>
+                    <div id="navbarMenuHeroB" class="navbar-menu">
+                        <div class="navbar-end">
+                            <a class="navbar-item is-active">
+                                Home
                             </a>
-                        </p>
+                            <a class="navbar-item">
+                                Projects
+                            </a>
+                            <a class="navbar-item">
+                                About Me
+                            </a>
+                            <span class="navbar-item">
+                                <a class="button is-info is-inverted">
+                                    <span class="icon">
+                                        <i class="fas fa-download"></i>
+                                    </span>
+                                    <span>Resume</span>
+                                </a>
+                            </span>
+                        </div>
                     </div>
                 </div>
+            </nav>
+        </div>
+
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <p class="title">
+                    Jessny Joseph
+                </p>
             </div>
         </div>
-    </nav>
+
+        <div class="hero-foot">
+            <nav class="tabs is-boxed is-fullwidth">
+                <div class="container">
+                    <ul>
+                        <!-- <li class="is-active">
+                            <a>Overview</a>
+                        </li> -->
+                        <li>
+                            <a>Love Connect</a>
+                        </li>
+                        <li>
+                            <a>Burger</a>
+                        </li>
+                        <li>
+                            <a>Employee Tracker</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
     <!-- Javascript File -->
     <script src="/assets/js/index.js"></script>
 </body>
