@@ -2,7 +2,7 @@
     float: left;
 }
 
-#aboutText {
+#aboutText, #title3, #title4 {
     margin-left: 150px;
 }
 
@@ -13,3 +13,4 @@
     width: 70%;
     height: 500px;
 }
+
