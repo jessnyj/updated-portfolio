@@ -10,22 +10,22 @@ module.exports = function (app) {
 
     // index route loads view.html
     app.get("/", function (req, res) {
-        res.sendFile(path.join(__dirname, "../public/index.html"));
+        res.sendFile(path.join(__dirname, "./public/index.html"));
     });
 
     // cms route loads cms.html
     app.get("/projects", function (req, res) {
-        res.sendFile(path.join(__dirname, "../public/projects.html"));
+        res.sendFile(path.join(__dirname, "./public/projects.html"));
     });
 
     // blog route loads blog.html
     app.get("/about", function (req, res) {
-        res.sendFile(path.join(__dirname, "../public/about.html"));
+        res.sendFile(path.join(__dirname, "./public/about.html"));
     });
 
     // authors route loads author-manager.html
     app.get("/contact", function (req, res) {
-        res.sendFile(path.join(__dirname, "../public/contact.html"));
+        res.sendFile(path.join(__dirname, "./public/contact.html"));
     });
 
 };
