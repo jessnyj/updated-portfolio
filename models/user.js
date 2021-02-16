@@ -1,5 +1,5 @@
 module.exports = function (sequelize, DataTypes) {
-    var Contact = sequelize.define("Post", {
+    var User = sequelize.define("Post", {
         username: {
             type: DataTypes.STRING,
             allowNull: false,
@@ -20,5 +20,5 @@ module.exports = function (sequelize, DataTypes) {
             allowNull: true
         }
     });
-    return Contact;
+    return User;
 };
