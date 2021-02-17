@@ -33,7 +33,14 @@ module.exports = function (app) {
 
     app.get("/blog", function (req, res) {
         db.Blog.findAll({})
-            // where: {
+        .then(function(data) {
+            res.render("blog", data);
+        });
+    });
+};
+
+
+      // where: {
             //     id: req.user.id,
             // },
         // }).then(function(dbData) {
@@ -48,10 +55,3 @@ module.exports = function (app) {
         // .catch(function (err) {
         //     console.log(err);
         // });
-        .then(function(dbBlog) {
-            res.json(dbBlog);
-        });
-    });
-
-
-};
