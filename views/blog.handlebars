@@ -1,0 +1,46 @@
+<section class="hero is-danger is-large">
+        <div class="hero-head">
+            <nav class="navbar">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <span class="navbar-burger" data-target="navbarMenuHeroB">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </div>
+                    <div id="navbarMenuHeroB" class="navbar-menu">
+                        <div class="navbar-end">
+                            <a class="navbar-item" href="/index">
+                                Home
+                            </a>
+                            <a class="navbar-item" href="/projects">
+                                Projects
+                            </a>
+                            <a class="navbar-item" href="/about">
+                                About Me
+                            </a>
+                            <a class="navbar-item" href="/contact">
+                                Contact
+                            </a>
+                            <a class="navbar-item is-active" href="/blog">
+                                Blog
+                            </a>
+                            <span class="navbar-item">
+                                <a class="button is-danger is-inverted" href="./images/resume.pdf">
+                                    <span class="icon">
+                                        <i class="fas fa-download"></i>
+                                    </span>
+                                    <span>Resume</span>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+<div>
+{{#each blogs}}
+<h1>{{title}}</h1>
+{{/each}}
+</div>

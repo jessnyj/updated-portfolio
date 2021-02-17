@@ -1,6 +1,6 @@
 const path = require("path");
 var express = require("express");
-
+var exphbs = require("express-handlebars");
 var PORT = process.env.PORT || 3000;
 
 // Requiring models for syncing
@@ -14,6 +14,9 @@ app.use(express.urlencoded({ extended: true }));
 
 // Static Directory
 app.use(express.static(path.join(__dirname, "public")));
+
+app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+app.set("view engine", "handlebars");
 
 // Routes
 require("./routes/html-routes.js")(app);
