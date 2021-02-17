@@ -32,10 +32,10 @@ module.exports = function (app) {
     });
 
     app.get("/blog", function (req, res) {
-        // db.Blog.findAll({
-        //     where: {
-        //         id: req.params.id,
-        //     },
+        db.Blog.findAll({})
+            // where: {
+            //     id: req.user.id,
+            // },
         // }).then(function(dbData) {
         //     var hbsData = {
         //         title: dbData.title,
@@ -48,7 +48,9 @@ module.exports = function (app) {
         // .catch(function (err) {
         //     console.log(err);
         // });
-        res.render("blog");
+        .then(function(dbBlog) {
+            res.json(dbBlog);
+        });
     });
 
 
