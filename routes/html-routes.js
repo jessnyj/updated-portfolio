@@ -31,24 +31,25 @@ module.exports = function (app) {
         res.render("contact");
     });
 
-    // app.get("/blog", function (req, res) {
-    //     db.Blog.findAll({
-    //         where: {
-    //             id: req.params.id,
-    //         },
-    //     }).then(function(dbData) {
-    //         var hbsData = {
-    //             title: dbData.title,
-    //             content: dbData.content,
-    //             id: dbData.id,
-    //         };
-    //         console.log(hbsData);
-    //         res.render("blog", hbsData);
-    //     })
-    //     .catch(function (err) {
-    //         console.log(err);
-    //     });
-    // });
+    app.get("/blog", function (req, res) {
+        // db.Blog.findAll({
+        //     where: {
+        //         id: req.params.id,
+        //     },
+        // }).then(function(dbData) {
+        //     var hbsData = {
+        //         title: dbData.title,
+        //         content: dbData.content,
+        //         id: dbData.id,
+        //     };
+        //     console.log(hbsData);
+        //     res.render("blog", hbsData);
+        // })
+        // .catch(function (err) {
+        //     console.log(err);
+        // });
+        res.render("blog");
+    });
 
 
 };
