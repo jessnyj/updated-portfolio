@@ -34,7 +34,8 @@ module.exports = function (app) {
     app.get("/blog", function (req, res) {
         db.Blog.findAll({})
         .then(function(data) {
-            res.render("blog", data);
+            res.render("blog", data)
+
         });
     });
 };
