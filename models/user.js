@@ -7,9 +7,6 @@ module.exports = function (sequelize, DataTypes) {
         content: {
             type: DataTypes.STRING(5000),
             allowNull: false,
-            // validate: {
-            //     len: [5, 5000]
-            // }
         },
     });
     return Blog;
