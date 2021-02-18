@@ -1,3 +1,4 @@
+{{!-- Navbar --}}
 <section class="hero is-danger is-large">
         <div class="hero-head">
             <nav class="navbar">
@@ -40,9 +41,20 @@
             </nav>
         </div>
     </section>
-<div>
-{{#each blogs}}
-<h1>{{title}}</h1>
-{{/each}}
+    {{!-- Blogs Appended Here --}}
+    <div id="blogCard" class="card">
+    <div class="card-content">
+        {{!-- <figure id="aboutPic" class="image is-128x128">
+            <img src="/assets/images/jessny-grad.png">
+        </figure> --}}
+        {{#each blogs}}
+        <h3 id="blogTitle" class="title is-3">{{title}}</h3>
+        <div id="blogText" class="content">
+            {{content}}
+        </div>
+        {{/each}}
+    </div>
 </div>
+<div>
+
 <script src="assets/js/index.js" type="=text/javascript"></script>

@@ -6,7 +6,10 @@ module.exports = function (sequelize, DataTypes) {
         },
         content: {
             type: DataTypes.STRING,
-            allowNull: false
+            allowNull: false,
+            validate: {
+                len: [5, 5000]
+            }
         },
     });
     return Blog;
