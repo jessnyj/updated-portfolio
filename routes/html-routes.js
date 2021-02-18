@@ -1,33 +1,23 @@
-// Dependencies
-// =============================================================
 var path = require("path");
 var db = require("../models");
-// Routes
-// =============================================================
+
 module.exports = function (app) {
-
-    // Each of the below routes just handles the HTML page that the user gets sent to.
-
-    // index route loads index.html
+    // index route loads index.handlebars
     app.get("/", function (req, res) {
-        // res.sendFile(path.join(__dirname, "../public/assets/index.html"));
         res.render("index");
     });
-    // projects route loads projects.html
+    // projects route loads projects.handlebars
     app.get("/projects", function (req, res) {
-        // res.sendFile(path.join(__dirname,"../public/assets/projects.html"));
         res.render("projects");
     });
 
-    // about route loads about.html
+    // about route loads about.handlebars
     app.get("/about", function (req, res) {
-        // res.sendFile(path.join(__dirname, "../public/assets/about.html"));
         res.render("about");
     });
 
-    // contact route loads contact.html
+    // contact route loads contact.handlebars
     app.get("/contact", function (req, res) {
-        // res.sendFile(path.join(__dirname, "../public/assets/contact.html"));
         res.render("contact");
     });
 

@@ -12,14 +12,14 @@ module.exports = function (app) {
     //         });
     // });
     
-    app.get("api/blog/:id", function(req, res) {
-        db.Blog.findOne({
-            where: {
-                id: req.params.id
-            }
-        }).then(function(dbBlog) {
-            res.json(dbBlog);
-        });
-    });
+    // app.get("api/blog/:id", function(req, res) {
+    //     db.Blog.findOne({
+    //         where: {
+    //             id: req.params.id
+    //         }
+    //     }).then(function(dbBlog) {
+    //         res.json(dbBlog);
+    //     });
+    // });
 };
 
