@@ -16,7 +16,7 @@
 
 ## Deployed Link
 * Click this link to view the site.
-[Deployed Link]()
+[Deployed Link](https://jessny-portfolio.herokuapp.com/)
 
 ## Site Picture
 ![Site]()
