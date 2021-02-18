@@ -5,11 +5,11 @@ module.exports = function (sequelize, DataTypes) {
             allowNull: false,
         },
         content: {
-            type: DataTypes.STRING,
+            type: DataTypes.STRING(5000),
             allowNull: false,
-            validate: {
-                len: [5, 5000]
-            }
+            // validate: {
+            //     len: [5, 5000]
+            // }
         },
     });
     return Blog;
