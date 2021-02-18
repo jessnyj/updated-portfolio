@@ -39,7 +39,7 @@ Take a look at my portfolio! This is a full stack, mobile responsive portfolio t
 
 
 ## Code Snippet
-* Allows you to update the SQL database by using ORM.
+* 
 ```
 
 ```
