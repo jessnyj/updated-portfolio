@@ -18,5 +18,14 @@
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
+}
 
+#msg {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#submitBtn {
+    margin-bottom: 20px;
+    margin-left: 20px;
 }
