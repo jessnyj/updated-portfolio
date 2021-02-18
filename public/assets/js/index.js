@@ -1,27 +1,31 @@
 $(document).ready(function () {
-    // function getBlog() {
-    //     $.ajax({
-    //         method: "POST",
-    //         url: "/blog"
-    //     }).then((response) => {
-    //         console.log(response);
-    // });
-    // }
     // getBlog();
-    fetch('/blog', {
-        method: 'POST',
-        headers: {
-            Accept: 'application/json',
-            'Content-Type': 'application/json',
-        },
-        })
-        .then(response => response.json())
-        .then(data => {
-            console.log('Success:', data);
-        })
-        .catch((error) => {
-            console.error('Error:', error);
-        });
+    // fetch('/blog', {
+    //     method: 'GET',
+    //     headers: {
+    //         Accept: 'application/json',
+    //         'Content-Type': 'application/json',
+    //     },
+    //     // console.log(response);
+    //     })
+    //     .then(response => response.json())
+    //     .then(data => {
+    //         console.log('Success:', data);
+    //     })
+    //     .catch((error) => {
+    //         console.error('Error:', error);
+    //     });
+
+    // $.ajax({
+    //     url: "/blog",
+    //     method: "GET"
+    // }).then(function(response) {
+    //     console.log(respsonse);
+    // })
+    // $.get("/blog").then(function(data) {
+    //     console.log(data);
+    // })
+    
 });
 
 

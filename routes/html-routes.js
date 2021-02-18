@@ -32,11 +32,21 @@ module.exports = function (app) {
     });
 
     app.get("/blog", function (req, res) {
-        db.Blog.findAll({})
-        .then(function(data) {
-            res.render("blog", data)
+        db.Blog.findAll({
+            title: req.body.title
+        }, {
+            where: {
+                id: req.params.id
+            }
+        
+        })
+            .then(function (data) {
+                res.render("blog", data)
 
-        });
+            }).catch(function (err) {
+                console.log(err);
+                res.status(401).json(err);
+            });
     });
 };
 
