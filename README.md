@@ -19,7 +19,7 @@
 [Deployed Link](https://jessny-portfolio.herokuapp.com/)
 
 ## Site Picture
-![Site]()
+![Site](public/assets/images/portfolio.gif)
 
 ## Technologies Used
 * javascript
